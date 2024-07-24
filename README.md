@@ -1,5 +1,5 @@
 
 # Fullstack Application in React, TypeScript, Redux Toolkit, Express
 
-A brief description of what this project does and who it's for
+
  ![youtube](https://github.com/user-attachments/assets/3ee152d2-0855-4c71-b65e-91404f5e7f0c) [Youtube Video](https://www.youtube.com/watch?v=KSh1WB92u0o)
