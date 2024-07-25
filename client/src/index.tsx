@@ -8,13 +8,19 @@ import { Paths } from "./paths";
 import reportWebVitals from "./reportWebVitals";
 import Login from "./pages/login";
 import Register from "./pages/register";
+import Employees from "./pages/employees";
+import Employee from "./pages/employee";
+
 import Auth from "./features/auth/auth";
 import "./index.css";
+import AddEmployee from "./pages/add-employee";
+import Status from "./pages/status";
+import EditEmployee from "./pages/edit-employee";
 
 const router = createBrowserRouter([
   {
     path: Paths.home,
-    element: <h1>Employees</h1>,
+    element: <Employees />,
   },
   {
     path: Paths.login,
@@ -23,6 +29,22 @@ const router = createBrowserRouter([
   {
     path: Paths.register,
     element: <Register />,
+  },
+  {
+    path: Paths.employeeAdd,
+    element: <AddEmployee />,
+  },
+  {
+    path: `${Paths.status}/:status`,
+    element: <Status />,
+  },
+  {
+    path: `${Paths.employee}/:id`,
+    element: <Employee />,
+  },
+  {
+    path: `${Paths.employeeEdit}/:id`,
+    element: <EditEmployee />,
   },
 ]);
 

@@ -59,6 +59,8 @@ const edit = async (req, res) => {
       },
       data,
     });
+
+    res.status(200).json("OK");
   } catch {
     res.status(500).json({ message: "Не удалось реадктировать сотрудника" });
   }
